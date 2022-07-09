@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-boxs;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.grayblue {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -10;
+  width: 47vw;
+  height: 120vh;
+}
+
+header nav {
+  width: 100%;
+}
+header nav ul {
+  width: 70%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+header nav ul li {
+  font-size: 1.5rem;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.left {
+  flex: 3 1 400px;
+  padding: 0rem 1.5rem;
+}
+main section.left h1 {
+  font-size: 4rem;
+  color: #84aaba;
+}
+main section.left p {
+  font-size: 1.25rem;
+  padding: 1rem 0rem;
+}
+main section.right {
+  flex: 1 1 500px;
+  position: relative;
+}
+main section.right img {
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 20vh;
+  right: 25vw;
+}
+main section.right div {
+  width: 60%;
+  color: rgb(0, 0, 0);
+  background-color: #cbcbcb;
+  font-size: 1.5rem;
+  text-align: center;
+  position: absolute;
+  top: 60vh;
+  left: 3vw;
+  box-shadow: 10px 8px 5px rgb(33, 78, 104);
+}
+main section.table {
+  flex: 3 1 500px;
+  padding: 0.5rem 3rem;
+}
+main section.table table {
+  border-collapse: collapse;
+}
+main section.table table tr {
+  border-bottom: 2px solid rgb(85, 109, 125);
+  transition: all 0.5s ease-in;
+}
+main section.table table tr td {
+  padding: 0.5rem 1rem;
+}
+main section.table table tr:hover {
+  background-color: #a4d6e9;
+}
+main section.picture {
+  flex: 1 1 600px;
+  position: relative;
+}
+main section.picture img {
+  width: 30vw;
+  left: 10px;
+}
+main section.picture div.grayRect {
+  width: 30vw;
+  height: 70vh;
+  background-color: #84aaba;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: -1;
+}
+main section.form {
+  flex: 1 1 600px;
+}
+main section.form form {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem 0.75rem;
+}
+main section.form form div {
+  margin: 0.5rem;
+}
+main section.form form div label {
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+}
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #84a8b7;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  width: 85%;
+  border-radius: 15px;
+}
+main section.form form div textarea {
+  vertical-align: top;
+}
+main section.form form button {
+  align-self: center;
+  background-color: #84aaba;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 20px;
+}
+main div.line {
+  background-color: #84aaba;
+  width: 3px;
+}
+main section.contact {
+  flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+main section.contact div.content h2 {
+  margin: 1rem 0rem;
+}
+
+footer a {
+  padding: 0.5rem;
+}
+footer img {
+  padding-bottom: 1.25rem;
+  width: 10vw;
+  height: 10vh;
+}
+
+.active {
+  color: #84aaba;
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    background-color: rgba(132, 170, 186, 0.3);
+  }
+
+  .grayblue {
+    opacity: 0;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid rgb(139, 139, 139);
+  }
+
+  div.line {
+    display: none;
+  }
+
+  main section.right {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.right img {
+    position: static;
+    transform: none;
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.right div {
+    position: static;
+  }
+  main section.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.picture img {
+    width: 50vw;
+    padding-bottom: 1.5rem;
+  }
+  main section.picture div.grayRect {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
